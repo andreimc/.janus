@@ -1,0 +1,24 @@
+[submodule "ag.vim"]
+	path = ag.vim
+	url = https://github.com/rking/ag.vim
+[submodule "ag"]
+	path = ag
+	url = https://github.com/rking/ag.vim
+[submodule "delimitMate"]
+	path = delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "dracula-theme"]
+	path = dracula-theme
+	url = https://github.com/zenorocha/dracula-theme/
+[submodule "vim-airline"]
+	path = vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "vim-rspec"]
+	path = vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec.git
+[submodule "vim-tslime"]
+	path = vim-tslime
+	url = https://github.com/LnL7/vim-tslime.git
+[submodule "vim-turbux"]
+	path = vim-turbux
+	url = https://github.com/jgdavey/vim-turbux.git
