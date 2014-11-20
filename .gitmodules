@@ -1,6 +1,3 @@
-[submodule "ag.vim"]
-	path = ag.vim
-	url = https://github.com/rking/ag.vim
 [submodule "ag"]
 	path = ag
 	url = https://github.com/rking/ag.vim
