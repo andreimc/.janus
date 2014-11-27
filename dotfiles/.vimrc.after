@@ -1,0 +1,62 @@
+" Open NERDTree by default
+if has("gui_macvim") && has("gui_running") || getcwd() =~ "new_projects"
+ autocmd VimEnter * NERDTree
+ autocmd VimEnter * wincmd p
+endif
+
+set hidden
+
+syntax on
+color Dracula
+" Mouse
+set mouse=a
+if &term =~ '^screen'
+ " tmux knows the extended mouse mode
+ set ttymouse=xterm2
+endif
+
+
+" YankRing
+nnoremap <silent> <F4> :YRShow<CR>·
+
+
+" retain the visual selection after having pressed > or <
+vnoremap > >gv
+:vnoremap < <gv
+
+" rspec.vim
+map <Leader>f :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+"let g:rspec_command = "!bundle exec rspec {spec}"
+if filereadable("config/environment.rb")
+ let g:rspec_command = 'call Send_to_Tmux("zspec {spec}\n")'
+else
+ let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+endif
+
+if filereadable("fig.yml")
+   let g:rspec_command = 'call Send_to_Tmux("fig run web bundle exec rspec {spec}\n")'
+endif
+
+"molokai Colour
+set t_Co=256
+"set guifont=Menlo\ Regular:h14
+"color molokai
+
+set clipboard+=unnamed
+
+" CtrlP
+call janus#add_mapping('ctrlp', 'map', '<leader>,', ':CtrlP<CR>')
+call janus#add_mapping('ctrlp', 'map', '<leader>t', ':CtrlP<CR>')
+
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_dont_split = 'NERD_tree_2'
+
+vmap <Leader>z :call I18nTranslateString()<CR>
+
+" Buffer navigation
+map gn :BF<cr>
+map gp :BB<cr>
