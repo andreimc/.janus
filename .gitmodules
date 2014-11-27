@@ -19,3 +19,6 @@
 [submodule "vim-turbux"]
 	path = vim-turbux
 	url = https://github.com/jgdavey/vim-turbux.git
+[submodule "powerline-fonts"]
+	path = powerline-fonts
+	url = git@github.com:Lokaltog/powerline-fonts.git
