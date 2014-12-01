@@ -52,7 +52,6 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export EDITOR='vim'
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin"
-alias gbr='git branch | grep -v "master" | xargs git branch -D'
 $(boot2docker shellinit)
 alias b2dtunnel='docker ps -q | xargs -n 1 docker inspect  | jq ".[0].NetworkSettings.Ports +{} | map(select(. != null)[0].HostPort) | map(\"-L \(.):localhost:\(.)\") " | sed -n "s/.*\"\(.*\)\".*/\1/p" |xargs boot2docker ssh -N'
 # export MANPATH="/usr/local/man:$MANPATH"
