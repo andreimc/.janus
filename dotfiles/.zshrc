@@ -86,6 +86,6 @@ export RBENV_ROOT=$HOME/.rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/opt/chefdk/bin:/usr/local/heroku/bin:$PATH"
 
 [ -s "/Users/amiulescu/.scm_breeze/scm_breeze.sh" ] && source "/Users/amiulescu/.scm_breeze/scm_breeze.sh"
