@@ -51,9 +51,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export EDITOR='vim'
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin"
 $(boot2docker shellinit)
-alias b2dtunnel='docker ps -q | xargs -n 1 docker inspect  | jq ".[0].NetworkSettings.Ports +{} | map(select(. != null)[0].HostPort) | map(\"-L \(.):localhost:\(.)\") " | sed -n "s/.*\"\(.*\)\".*/\1/p" |xargs boot2docker ssh -N'
+alias tma='tmux attach || tmux -2'
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -89,3 +88,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="/opt/chefdk/bin:/usr/local/heroku/bin:$PATH"
 
 [ -s "/Users/amiulescu/.scm_breeze/scm_breeze.sh" ] && source "/Users/amiulescu/.scm_breeze/scm_breeze.sh"
+
+[ -s "/Users/andrei/.scm_breeze/scm_breeze.sh" ] && source "/Users/andrei/.scm_breeze/scm_breeze.sh"
