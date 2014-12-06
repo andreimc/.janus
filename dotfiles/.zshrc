@@ -52,7 +52,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 export EDITOR='vim'
 $(boot2docker shellinit)
-alias tma='tmux attach || tmux -2'
+alias tma='tmux -2 attach || tmux -2'
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
