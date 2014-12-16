@@ -53,6 +53,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 $(boot2docker shellinit)
 alias tma='tmux -2 attach || tmux -2'
+alias tmpair='tmux -2 -S /var/tmux/pair_sock new -s shared'
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
