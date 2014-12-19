@@ -22,3 +22,6 @@
 [submodule "powerline-fonts"]
 	path = powerline-fonts
 	url = git@github.com:Lokaltog/powerline-fonts.git
+[submodule "vim-ansible-yaml"]
+	path = vim-ansible-yaml
+	url = git://github.com/chase/vim-ansible-yaml.git
