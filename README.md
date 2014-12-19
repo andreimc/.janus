@@ -12,4 +12,5 @@ ln -sf $PWD/dotfiles/.vimrc.before ~/.vimrc.before
 ln -sf $PWD/dotfiles/.gemrc ~/.gemrc
 mkdir -p ~/.vim/colors/
 ln -sf $PWD/dracula-theme/vim/dracula.vim ~/.vim/colors/
+ln -sf $PWD/dracula-theme/zsh/dracula.zsh-theme ~/.oh-my-zsh/themes
 ```
