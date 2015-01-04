@@ -45,7 +45,7 @@ ZSH_THEME="dracula"
 # unchctl limit maxfilesCustom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zeus git rbenv bundler rails)
+plugins=(zeus tmux git rbenv bundler rails)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -53,7 +53,6 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 $(boot2docker shellinit)
 alias tma='tmux -2 attach || tmux -2'
-alias tmpair='tmux -2 -S /var/tmux/pair_sock new -s shared'
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
