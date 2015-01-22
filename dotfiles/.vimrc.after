@@ -31,7 +31,9 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 "let g:rspec_command = "!bundle exec rspec {spec}"
-if filereadable("config/environment.rb")
+if filereadable("bin/rspec")
+ let g:rspec_command = 'call Send_to_Tmux("bin/rspec {spec}\n")'
+elseif filereadable("config/environment.rb")
  let g:rspec_command = 'call Send_to_Tmux("zspec {spec}\n")'
 else
  let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
