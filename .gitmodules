@@ -28,3 +28,6 @@
 [submodule "vim-yankstack"]
 	path = vim-yankstack
 	url = git@github.com:maxbrunsfeld/vim-yankstack.git
+[submodule "vim-elixir"]
+	path = vim-elixir
+	url = git@github.com:elixir-lang/vim-elixir.git
