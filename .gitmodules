@@ -31,3 +31,6 @@
 [submodule "vim-elixir"]
 	path = vim-elixir
 	url = git@github.com:elixir-lang/vim-elixir.git
+[submodule "vim-surround"]
+	path = vim-surround
+	url = git@github.com:tpope/vim-surround.git
