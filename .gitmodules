@@ -40,3 +40,6 @@
 [submodule "vim-coffee-script"]
 	path = vim-coffee-script
 	url = git@github.com:kchmck/vim-coffee-script.git
+[submodule "vim-terraform"]
+	path = vim-terraform
+	url = git://github.com/markcornick/vim-terraform.git
