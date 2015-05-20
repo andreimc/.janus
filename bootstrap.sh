@@ -1,8 +1,5 @@
-.janus
-======
-Vim + tmux + zsh files + dracula + powerline fonts
+#!/bin/bash
 
-```
 git submodule init
 git submodule update
 ln -sf $PWD/dotfiles/.zshrc ~/.zshrc
@@ -14,4 +11,3 @@ mkdir -p ~/.vim/colors/
 ln -sf $PWD/dracula-theme/vim/dracula.vim ~/.vim/colors/
 ln -sf $PWD/dracula-theme/zsh/dracula.zsh-theme ~/.oh-my-zsh/themes
 ln -sf $PWD/zsh-plugins/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins
-```

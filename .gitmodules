@@ -43,3 +43,6 @@
 [submodule "vim-terraform"]
 	path = vim-terraform
 	url = git://github.com/markcornick/vim-terraform.git
+[submodule "zsh-plugins/zsh-syntax-highlighting"]
+	path = zsh-plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
