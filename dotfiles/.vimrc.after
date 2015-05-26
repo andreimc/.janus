@@ -62,3 +62,6 @@ vmap <Leader>z :call I18nTranslateString()<CR>
 " Buffer navigation
 map gn :BF<cr>
 map gp :BB<cr>
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
