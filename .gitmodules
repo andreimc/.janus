@@ -52,3 +52,6 @@
 [submodule "vim-jinja2"]
 	path = vim-jinja2
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
+[submodule "vim-jsx"]
+	path = vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
