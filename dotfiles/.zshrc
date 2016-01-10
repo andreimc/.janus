@@ -91,6 +91,3 @@ export PATH="/opt/chefdk/bin:/usr/local/heroku/bin:$PATH"
 [ -s "/Users/amiulescu/.scm_breeze/scm_breeze.sh" ] && source "/Users/amiulescu/.scm_breeze/scm_breeze.sh"
 
 [ -s "/Users/andrei/.scm_breeze/scm_breeze.sh" ] && source "/Users/andrei/.scm_breeze/scm_breeze.sh"
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
