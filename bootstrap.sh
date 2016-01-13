@@ -1,5 +1,7 @@
 #!/bin/bash
-
+curl -L https://bit.ly/janus-bootstrap | bash
+ 
+ 
 git submodule init
 git submodule update
 ln -sf $PWD/dotfiles/.zshrc ~/.zshrc
