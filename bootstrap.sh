@@ -15,3 +15,5 @@ ln -sf $PWD/dracula-theme/zsh/dracula.zsh-theme ~/.oh-my-zsh/themes
 ln -sf $PWD/zsh-plugins/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins
 cd teamocil && gem build teamocil.gemspec && gem install teamocil-1.3.gem
 mkdir -p ~/.teamocil
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
